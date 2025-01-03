@@ -2,7 +2,7 @@
 
 This repository contains the code used in my Master's Thesis to develop a Random Forest classification model for assessing potential diseased sweet chestnut trees by using freely availabe Sentinel-2 data and sampled tree data. The model utilizes Recursive Feature Elimination (RFE) and Leave-Location-Out Cross-Validation (LOO CV) for feature selection and model validation.
 
-## Overview
+## Key Tasks
 The primary goal of this script is to classify given pixels of sweet chestnut canopies into either "symptomatic" or " non-symptomatic". Potential input features are monthly calculated median values of 8 spectral bands and 8 vegetation indices. The script performs the following key tasks:
 
  - Leave Location Out-Cross Validation (LLO CV): Instead of using random splits for model validation, a LLO CV was performed to take into account the spatial dependencies of the input data. 9 spatial folds were defined based on visual assessment of the data's spatial distribution. From each fold, 10 samples were held out of the model training to an independent model testing at the end of the script. Used scoring metrics are the overall accuracy, precision, recall and the F1-score.
@@ -13,6 +13,7 @@ The primary goal of this script is to classify given pixels of sweet chestnut ca
 
 - Random Forest (RF) model training: With the final selection of input features, the RF classifier was trained. The model was stored to ensure consistent results when reusing with new input data. 
 
+## Libraries
 The following libraries are required to run the script:
 
     random

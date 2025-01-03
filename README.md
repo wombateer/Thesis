@@ -1,10 +1,8 @@
-# Feature Selection and Random Forest Model Training
-Main Script for Methods of Master's Thesis "Assessing Potential Ink Disease Distribution in Sweet Chestnut
-Forests in Switzerland. A Remote Sensing Approach"
+# Assessing Potential Ink Disease Distribution in Sweet Chestnut Forests in Switzerland. A Remote Sensing Approach - Main Coding Script
 
-This repository contains the code used in my Master's Thesis to develop a Random Forest classification model for assessing potential diseased sweet chestnut trees. The model utilizes Recursive Feature Elimination (RFE) and Leave Location Out Cross-Validation (LOO-CV) for feature selection and model validation.
+This repository contains the code used in my Master's Thesis to develop a Random Forest classification model for assessing potential diseased sweet chestnut trees by using freely availabe Sentinel-2 data and sampled tree data. The model utilizes Recursive Feature Elimination (RFE) and Leave Location Out Cross-Validation (LOO-CV) for feature selection and model validation.
 
-Overview
+##Overview
 The primary goal of this project is to classify the condition of trees based on various spectral indices and features. The script performs the following key tasks:
 
   Data Preprocessing:
